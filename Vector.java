@@ -288,7 +288,11 @@ public class Vector {
     public float dir(){
         return (float)Math.atan2(y, x);
     }
-
+    
+    public static float getAngle(Vector a, Vector b){
+        return b.dir() - a.dir();
+    }   
+    
     public static Vector lerp(Vector a, Vector b, float c){
         return add( mult(a, c), mult(b, 1.0f - c));
     }

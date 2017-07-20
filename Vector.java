@@ -302,4 +302,10 @@ public class Vector {
         iy = (int)y;
         iz = (int)z;
     }
+    
+    public void floatify(){
+        x = (float)ix;
+        y = (float)iy;
+        z = (float)iz;
+    }    
 }

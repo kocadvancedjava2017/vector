@@ -308,4 +308,9 @@ public class Vector {
         y = (float)iy;
         z = (float)iz;
     }    
+    
+    @Override
+    public String toString(){
+        return "Vector( " + x  + ", " + y + ", " + z + " )";
+    }
 }
